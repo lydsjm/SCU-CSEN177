@@ -1,0 +1,14 @@
+# Name: Lydia Myla
+# Date: 9/24/2024
+# Title: Lab 1 - Notes
+# Description: notes from running the steps 
+
+Lab 1 Notes
+Step 1: I created the Shell file.
+Step 2: I had the wrong username, so it gave me an error.
+        But once I fixed it, the program ran well.
+Step 3: I was able to successfully add in a way to compute the area of a circle.
+        It took me some time to figure out the right formula/commands. Also, I had
+        to create separate responses for rectangle and the circle because when I
+        first tried it, it was in a loop. Once I fixed the issue, everything ran well.
+        
