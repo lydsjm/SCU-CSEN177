@@ -1,0 +1,29 @@
+/*
+Name: Lydia Myla
+Date: 10/1/2024
+Title: Lab 2 Observations
+Description: observations and notes from Lab 2
+*/
+
+Step 1-4
+- I created the C program and compiled it.
+- When I ran the program by just entering the Executable Name, 
+  it said there was a segmentation fault.
+- However, when setting the microseconds, then it ran well.
+- Comparing delays of 500 and 5000, 500 was quicker than 5000.
+
+Step 5
+- I wrote my own program. I had some minor issues since I wasn't printing the PIDs
+  correctly and individually. So, I edited my code then listed each process with its own pid 
+  as well as with the corresponding pid of its parent/child to track the relationship.
+
+Step 6
+- I rewrote the program using threads instead of processes. Similar to Steps 1-4,
+  I compiled the program.
+- However, when compiling, I added -lpthread at the end of the command line.
+- Then, I experimented with using 3000, 500, and 5000 as delay microseconds.
+- As expected, 500 microseconds of delay returned the output the fastest.
+
+Step 7
+- I wrote a program where the parent process spawns a child that runs the ls command.
+- My program ran well and I was able to see all the files that were in my folder.
