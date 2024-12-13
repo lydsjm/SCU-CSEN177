@@ -1,0 +1,55 @@
+Name: Lydia Myla
+Date: 10/29/24
+Title: Lab 6 – Steps
+Description: write out the steps needed to setup/do this lab
+
+
+
+Step 1
+- if connecting remotely, install NoMachine and use the link 
+    on SCU's website to help you download the necessary files
+- then create a new virtual desktop and you should be able to open it
+- if using the ECC, just log in and open Terminal
+
+Step 2
+- now to install and run Minix on the ECC, type virtualbox and it should open
+
+Step 3
+- select Expert Mode on the far right
+- then click the three dots menu on Tools, select Networks, 
+    go to Host-only Networks, and click Create to create a network called vboxnet0, 
+    under the properties menu, select DHCP Server, Enable Server, and Apply
+- now click on file on the top of the screen and create a new appliance
+- when a screen pops us, type in /local/Vbox/minix3-1-7.ova, expand the
+    Settings tab and set MAC Address Policy to Generate new MAC addresses 
+    for all network adapters, then click Finish
+
+Step 4
+- start the VM
+- to attach your keyboard to the VM, click the region where text appears
+- to detach from the VM and get the cursor, press the ctrl button on the right of your keyboard
+
+Step 5
+- after it launches VM it will prompt you to input your username/password, instructions below
+    - login: root
+    - password: passwd (use this to set your password)
+    - now it will prompt you to create your own password
+
+Step 6
+- to find a file to edit, it can be found in the /usr/src/ directory
+- the file i used was main.c
+
+Step 7
+- to edit the file, i typed vi main.c
+- this opened the main file
+- to edit the file, i clicked i which allowed me to insert
+- now i went to the line containing the printf statement and inserted my name
+    - printf ("Lydia MINIX...)
+- to exit and save changes, click esc, then type :wq
+
+Step 8
+- now that main.c is updated, type the following commands to see the changes
+    - # cd /usr/src
+    - # make world (this will take some time, once it is finished then move on)
+    - # reboot
+- you should now be able to see the changes that you made in the printf statement

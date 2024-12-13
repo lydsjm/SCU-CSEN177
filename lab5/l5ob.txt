@@ -1,0 +1,12 @@
+/*
+Name : Lydia Myla
+Date : 10/21 - 2:15
+Title: Lab 5 Observations
+Description: observations and notes from Lab 5
+*/
+
+Step 1 - threadSync.c is different than threadHello.c program because all the threads return. Why?
+- threadSync.c shows how thread synchronization works using semaphores while threadHello.c just shows how to create and join threads
+- so the i variable that was creating issues in threadHello.c will not create the same issue here
+Step 2-4
+- these all ran well
