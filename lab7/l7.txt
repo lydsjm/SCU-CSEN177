@@ -1,0 +1,39 @@
+Name: Lydia Myla
+Date: 11/5/24
+Title: Lab 7 - Steps
+Description: write out the steps needed to setup/do this lab
+
+Step 1
+- launch VirtualBox and start the Minix3 machine
+
+Step 2
+- prepare to setup an FTP connection by using 'tcpd ftp /usr/bin/in.ftpd &'
+- use 'ifconfig' in the virtual machine to find your ip address
+- go into your file directory and click Others on the left side panel
+- now, at the bottom add "ftp://ipaddress" and connect
+- follow the prompt and login in as a registered user
+
+Step 3
+- to find a file that deals with "picking" a process, search through the files available after connecting
+- go to the following folders: usr - src - kernels - proc.c
+- open the file in VEdit, and edit the pick_proc function
+- here is the added/changed code snippet
+    for (q=0; q < NR_SCHED_QUEUES; q++) {	
+        int random = rand() % 10;
+
+        if (random <= 2 && q > 2)
+            q = q % (NR_SCHED_QUEUES - 2) + 2;
+
+
+        if(!(rp = rdy_head[q]))  { 
+            TRACE(VF_PICKPROC, printf("queue %d empty\n", q););
+            continue;
+        }
+
+Step 4
+- now, run the following commands
+    - cd /usr/src
+    - make world
+    - reboot
+- and it should now take longer to reboot
+
