@@ -1,0 +1,21 @@
+/*
+Name: Lydia Myla
+Date: Tuesday - 2:15
+Title: Lab 4 Observations
+Description: observations and notes from Lab 4
+*/
+
+Step 1:
+- No, I don't get the same result since i is a shared-state and is repeated.
+- Running other demanding processes could effect the scheduling of the threads.
+  It might delay the execution.
+- The variables are shared state are stored in the stack.
+- The variable is shared state, and it is stored on the stack.
+
+Step 2:
+- The main thread might exit before all the other threads that are created exit.
+  So we might not hear from all the threads.
+
+Step 3:
+- I created a program that uses threads to peform a parallel matrix multiply.
+  From what I saw, it seems to run well and correctly. 
