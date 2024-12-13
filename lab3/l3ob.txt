@@ -1,0 +1,27 @@
+/*
+Name: Lydia Myla
+Date: 10/8/2024
+Title: Lab 3 Observations
+Description: observations and notes from Lab 3
+*/
+
+Step 1-2
+- i compiled and ran the given program and had no issues
+
+Step 3
+- program shows ouput on the upstream end of the pipe
+
+Step 4
+- i wrote the program and it ran well
+
+Step 5
+- i wrote a program to implement what was asked, and it ran well
+
+Step 6
+- 10 threads created
+- i : changes each time but each time, there is one iteration repeated multiple times
+- problem: is that i is a shared-state memory
+    
+Step 7:
+- the fix is to add an array hat will allocate an i for every thread so that they aren't all using shared-state memory
+     
